@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Bob - Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Smooth gradient from header to main menu */
+            background: linear-gradient(to bottom, #ff7e5f, #ffb347, #ffd699);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header img {
+            width: 180px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 42px;
+            color: #fff;
+            text-shadow: 1px 1px #d35400;
+        }
+
+        h2 {
+            color: #d35400;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .menu-section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .menu-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .menu-card {
+            background: linear-gradient(to bottom right, #ffecd2, #fcb69f); /* gradient cards */
+            border-radius: 15px;
+            width: 220px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Make all menu images the same size */
+        .menu-card img {
+            width: 180px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            object-fit: cover; /* crop and scale images to fit box */
+        }
+
+        .menu-card h3 {
+            margin: 5px 0;
+            color: #e67e22;
+        }
+
+        .menu-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .menu-card .price {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #d35400;
+        }
+
+        .order-section {
+            max-width: 600px;
+            margin: 40px auto;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #d35400;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* gradient button */
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #e67e22, #f6b26b);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Boba Bob</h1>
+    </header>
+
+    <!-- Makanan Section -->
+    <div class="menu-section">
+        <h2>Makanan Utama</h2>
+        <div class="menu-cards">
+            <div class="menu-card">
+                <img src="https://i.redd.it/r2ssc5xtigjy.jpg" alt="Bubble Waffle">
+                <h3>Bubble Waffle</h3>
+                <p>Waffle renyah dengan bola boba kenyal di atasnya.</p>
+                <div class="price">Rp30.000</div>
+            </div>
+            <div class="menu-card">
+                <img src="https://seesfoodwilltravel.com/wp-content/uploads/2022/11/Japanese-Fried-Chicken-or-Chicken-Karaage-7-1152x1536.jpg" alt="Chicken Karaage">
+                <h3>Chicken Karaage</h3>
+                <p>Ayam goreng ala Jepang yang renyah dan juicy.</p>
+                <div class="price">Rp35.000</div>
+            </div>
+            <div class="menu-card">
+                <img src="https://tornadoughalli.com/wp-content/uploads/2021/12/CHILI-CHEESE-FRIES-4.jpg" alt="Fries with Cheese">
+                <h3>Fries with Cheese</h3>
+                <p>Kentang goreng gurih dengan saus keju lembut.</p>
+                <div class="price">Rp25.000</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minuman Section -->
+    <div class="menu-section">
+        <h2>Minuman</h2>
+        <div class="menu-cards">
+            <div class="menu-card">
+                <img src="https://i.pinimg.com/1200x/33/a5/6e/33a56e01f8208b98c29ec6b8e0a89b28.jpg" alt="Boba Milk Tea">
+                <h3>Boba Milk Tea</h3>
+                <p>Teh susu lembut dengan bola boba kenyal.</p>
+                <div class="price">Rp25.000</div>
+            </div>
+            <div class="menu-card">
+                <img src="https://plantbasedjess.com/wp-content/uploads/2023/06/IMG_6827.jpg" alt="Strawberry Boba">
+                <h3>Strawberry Boba</h3>
+                <p>Minuman segar dengan rasa stroberi manis dan boba.</p>
+                <div class="price">Rp28.000</div>
+            </div>
+            <div class="menu-card">
+                <img src="https://www.cookerru.com/wp-content/uploads/2021/04/brown-sugar-boba-feature-1-1170x1755.jpg" alt="Brown Sugar Boba">
+                <h3>Brown Sugar Boba</h3>
+                <p>Boba manis dengan saus gula merah khas Taiwan.</p>
+                <div class="price">Rp30.000</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Pemesanan -->
+    <div class="order-section">
+        <h2>Form Pemesanan</h2>
+        <form action="#" method="post">
+            <input type="text" name="nama" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="catatan" placeholder="Catatan Pesanan" rows="4"></textarea>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Boba Bob. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
